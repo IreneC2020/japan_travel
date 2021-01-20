@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Final Project</title>
+<link href="css/styles.css" type="text/css" rel="stylesheet">
+
+
+</head>
+
+<body class="newsletter">
+ <div id="wrapper">
+<header>
+    <div class="header-inner">
+    <a href="index.html">
+    <img id="logo" src="images/logo_kumamon.JPG" alt="Logo">
+    </a>
+    </div> <!--    end header inner-->
+<!--    another box-->
+    
+    <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="visit.html">Visit</a></li>
+    <li><a href="food.html">Taste</a></li>
+    <li><a href="transport.html">Transport</a></li>
+    <li><a href="stay.html">Stay</a></li>
+    <li><a href="talk.html">Talk</a></li> 
+
+    </ul>
+    </nav>
+ </header>
+
+        
+<main>
+        <form action="formhandler.php" method="post">
+<!--    always use post, more secure-->
+    <fieldset>
+<!--     different fieldset for huge form for category-->
+<legend>Sign up our newsletter</legend>
+    
+    <label>Name</label>
+        <input type="text" name="name">
+<!--    label and input is inline element, display side by side, not below-->
+    
+     <label>Email</label>
+        <input type="email" name="email">
+   
+<label>What format of newsletter do you want? </label>
+<ul>
+<li><input type="radio" name="format" value="pdf">pdf file</li>
+<li><input type="radio" name="format" value="word">word file</li>
+<li><input type="radio" name="format" value="text">plain text in email</li>
+<li><input type="radio" name="format" value="html">html in email</li>
+</ul>
+<!--type="radio" name="payment" to make sure only one radio can click, one OR THE OTHER-->
+<label>How did you hear about us?</label>
+<ul>
+<li><input type="checkbox" name="how" value="search">Search engine</li>
+<li><input type="checkbox" name="how" value="friends">Friends</li>
+<li><input type="checkbox" name="how" value="newspaper">Newspaper</li>
+<li><input type="checkbox" name="how" value="others">Others</li>
+</ul>
+
+       
+<label>Which prefecture in Kyushu are you most interested in?</label>       
+<select name="prefecture">
+    <option value="fukuoka"> Fukuoka</option>
+    <option value="kagoshima"> Kagoshima</option>
+    <option value="kumamoto"> Kumamoto</option>
+    <option value="miyasaki"> Miyasaki</option>
+    <option value="nagasaki">Nagasaki</option>
+    <option value="oita">Oita</option>
+    <option value="saga"> Saga</option>
+</select>
+        
+        
+ <label>Comments</label>
+<!--        <input type="comments" name="comments"> this only show single line-->
+<textarea name="comments"></textarea>
+<!--textarea allows multiple lines-->
+ 
+
+    <input type="submit" value="Sign up">
+<!--    value: what will show on the button-->
+    
+    
+        
+        
+    </fieldset>
+    </form>
+</main>
+     
+<aside>
+<h2 class="bluemoon"> More about Kyushu? Sign up our newsletter!</h2>
+<h3 class="cursive"> Our newsletter include:</h3>
+<ul>
+<li>Most updated information visiting Kyushu</li>
+<li>New restaurants</li>
+<li>Seasonal festivals </li>
+<li>Discount bargains!</li>
+<li>And more...</li>
+
+    </ul>
+</aside>
+
+     <footer>
+ <ul>
+    <li>Copyright 2020 &copy;</li>
+     <li> All Rights Reserved</li>
+     <li> <a href=""> Terms of Use</a></li>
+     <li> <a href="../index.html"> Webdesign by Ying</a></li>
+     <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F~ycheung%2Fit111%2Ffinal_project%2Fnewsletter.html">Valid</a></li>
+     
+
+ </ul>  
+ </footer>
+     
+</div>
+<!--    end of wrapper-->
+    
+    
+    
+    
+    
+    
+    </body>
+    
+</html>
