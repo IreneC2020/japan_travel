@@ -1,2 +1,2 @@
 # Japan Travel
-This is my final project for my class it111
+This is a travel website using html and css to complete
